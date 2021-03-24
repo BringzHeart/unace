@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Setting Profile</title>
-		<link href="/host/theme/style.css" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+		<link href="" rel="" type="">
+		<link rel="" href="">
 	</head>
 	<body class="loggedin">
 		<nav class="navtop">
@@ -13,6 +13,7 @@
 				<a href="/unace/home/home_admin.html">Home</a>
 				<a href="/unace/profile/my_profile.html">Proflie</a>
 				<a href="/unace/auth/logout.php">Logout</a>
+				<a href="/unace/profile/setting/change_password.html">Change Password</a>
 			</div>
 		</nav>
         <div>
@@ -20,31 +21,45 @@
 				<tr>
 					<td>
 						<label for="username" id="username" name="username">username</label>
-						<input type="text" name="username" id="username" placeholder="username">
+						<input type="text" name="username" id="username" placeholder="Username">
 					</td>
 				</tr>
 				<tr>
 					<td>
 						<label for="firstname" id="firstname" name="firstname">firstname</label>
-						<input type="text" name="firstname" id="firstname" placeholder="firstname">
+						<input type="text" name="firstname" id="firstname" placeholder="Firstname">
 					</td>
 				</tr>
 				<tr>
 				<td>
 					<label for="lastname" id="lastname" name="lastname">lastname</label>
-					<input type="text" name="lastname" id="lastname" placeholder="lastname">
+					<input type="text" name="lastname" id="lastname" placeholder="Lastname">
 				</td>	
 				</tr>
 				<tr>
 					<td>
 						<label for="email" id="email" name="email">email</label>
-						<input type="email" name="email" id="email" placeholder="email">
+						<input type="email" name="email" id="email" placeholder="Email">
 					</td>
 				</tr>
 				<tr>
-					<td><input type="submit"></td>
+					<td><a href=""><button type="button" onclick="submit()">Change</button></a></td>
+					<td><a href="/unace/profile/my_profile.html">Back to Profile</a></td>
 				</tr>
 			</table>
         </div>
+		<script>
+			function submit() {
+				username = document.getElementById('username').value;
+				firstname = document.getElementById('firstname').value;
+				lastname = document.getElementById('lastname').value;
+				email = document.getElementById('email').value;
+	
+				console.log(username)
+				console.log(firstname)
+				console.log(lastname)
+				console.log(email)
+			}
+		</script>
 	</body>
 </html>
