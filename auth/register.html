@@ -12,22 +12,32 @@
         <table>
             <form action="">
                 <td><label for="username" name="username" required>username</label>
-                <input type="username" placeholder="username"></td>
+                <input type="username" id="username" placeholder="username"></td>
                 <tr></tr>
                 <td><label for="password" name="password" required>password</label>
-                <input type="password" placeholder="password"></td>
+                <input type="password" id="password" placeholder="password"></td>
                 <tr></tr>
                 <td><label for="email" name="email" required>email</label>
-                <input type="email" placeholder="email"></td>
+                <input type="email" id="email" placeholder="email"></td>
                 <tr>
-                    <td><a href="/unace/home/homeadmin.html">submit</a></td>
+                    <td><a href=""><button type="button" onclick="submit()">Submit</button></a></td>
                 </tr>
                 <tr>
-                    <td><a href="/unace/auth/login.html">back to login</a></td>
+                    <td><a href="/unace/auth/login.html"><button>Back to Login</button></a></td>
                 </tr>
-                <!-- <a href="/unace/home/homeadmin.html"><button type="submit">submit</button></a> -->
             </form>
         </table>
     </div>
+    <script>
+        function submit() {
+            username = document.getElementById('username').value;
+            password = document.getElementById('password').value;
+            email = document.getElementById('email').value;
+
+            console.log(username)
+            console.log(password)
+            console.log(email)
+        }
+    </script>
 </body>
 </html>
